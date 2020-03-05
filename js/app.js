@@ -24,7 +24,8 @@ function getData(isbn){
                 result[firstKey].publish_date,
                 result[firstKey].publishers[0].name,
                 isbn,
-                result[firstKey].number_of_pages
+                result[firstKey].number_of_pages,
+                result[firstKey].cover.medium
             );
         },
         error: function(status, error){
@@ -33,13 +34,14 @@ function getData(isbn){
     });
 }
 
-function handleData(title, author, published, publisher, isbn, pages){
+function handleData(title, author, published, publisher, isbn, pages, coverUrl){
     console.log(title);
     console.log(author);
     console.log(published);
     console.log(publisher);
     console.log(isbn);
     console.log(pages);
+    console.log(coverUrl);
 }
 
 
