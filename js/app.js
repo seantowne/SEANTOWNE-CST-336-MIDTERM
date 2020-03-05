@@ -1,6 +1,8 @@
 
-// https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data
-//var baseUrl = https://openlibrary.org/api/books?
+$("#queryButton").on('click', function(){
+    var isbn = $("isbnInput").val();
+    getData(isbn);
+});
 
 
 
@@ -47,10 +49,3 @@ function handleData(title, author, published, publisher, isbn, pages, coverUrl){
 
 var data = getData("0451526538");
 
-/*
-
-$("#queryButton").on('click', function(){
-    var isbn = $("isbnInput").val();
-    getData(isbn);
-});
-*/
