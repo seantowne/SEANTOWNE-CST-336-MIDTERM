@@ -1,12 +1,13 @@
 
-$("#queryButton").on('click', function(){
-    var isbn = $("isbnInput").val();
-    getData(isbn);
-});
+// https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data
+//var baseUrl = https://openlibrary.org/api/books?
+
 
 
 
 function getData(isbn){
+    //"https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data"
+    // https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data
     
     var firstKey = "ISBN:"+isbn;
     var baseUrl = "https://openlibrary.org/api/books?"
@@ -41,9 +42,15 @@ function handleData(title, author, published, publisher, isbn, pages, coverUrl){
     console.log(isbn);
     console.log(pages);
     console.log(coverUrl);
-    
-    $("#result").html(title)
 }
 
 
+var data = getData("0451526538");
 
+/*
+
+$("#queryButton").on('click', function(){
+    var isbn = $("isbnInput").val();
+    getData(isbn);
+});
+*/
