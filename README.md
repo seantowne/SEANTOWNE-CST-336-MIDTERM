@@ -29,7 +29,9 @@ padding is inside the border whereas margin is outside the border.
  and the second outputs: [1, 2]
  
  4.
+ ```
  html
  |
  |
  |
+ ```
