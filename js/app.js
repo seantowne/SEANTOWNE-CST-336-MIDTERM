@@ -27,6 +27,7 @@ function getData(isbn){
 function handleData(data){
     var firstKey = Object.keys(data)[0];
     var title = data[firstKey].title;
+    console.log(firstKey);
     console.log(title);
 }
 
