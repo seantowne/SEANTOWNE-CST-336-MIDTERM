@@ -30,8 +30,15 @@ padding is inside the border whereas margin is outside the border.
  
  4.
  ```
- html
- |
- |
- |
+                            html
+                             |
+                             |
+                     head-----------body
+                       |              |
+                       |              |
+                     title.     img-----------p
+                       |                      |
+                     My page    and my info----------span
+                                                      |
+                                                      My Name
  ```
