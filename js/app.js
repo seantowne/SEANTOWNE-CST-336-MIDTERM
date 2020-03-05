@@ -6,7 +6,8 @@
 function getData(isbn){
     //"https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data"
     // https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data
-    
+    console.log("here")
+    console.log(isbn)
     var firstKey = "ISBN:"+isbn;
     var baseUrl = "https://openlibrary.org/api/books?"
     var urlToUse = baseUrl + "bibkeys=ISBN:" + isbn + "&format=json&jscmd=data";
