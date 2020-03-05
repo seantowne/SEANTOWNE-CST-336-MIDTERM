@@ -2,7 +2,7 @@
 ####  Sean Towne
 
 1.
-1.a.1: Inline: right into the tag ex: <tag style="color: blue;"></tag>
+1.a.1: Inline: right into the tag ex: <div style="color: blue;"></div>
 
 1.a.2: Embeded: in the html file but in a style tage ex: <style>h1 {color:red;} p {color:blue;}</style>
 
