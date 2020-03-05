@@ -1,8 +1,4 @@
 
-$("#queryButton").on('click', function(){
-    var isbn = $("isbnInput").val();
-    getData(isbn);
-});
 
 
 
@@ -45,6 +41,11 @@ function handleData(title, author, published, publisher, isbn, pages, coverUrl){
     console.log(pages);
     console.log(coverUrl);
 }
+
+$("#queryButton").on('click', function(){
+    var isbn = $("isbnInput").val();
+    getData(isbn);
+});
 
 
 var data = getData("0451526538");
