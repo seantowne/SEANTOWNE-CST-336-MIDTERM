@@ -2,7 +2,7 @@
 // https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data
 //var baseUrl = https://openlibrary.org/api/books?
 
-console.log(getData("0451526538"));
+
 
 
 function getData(isbn){
@@ -22,3 +22,4 @@ function getData(isbn){
         }
     });
 }
+console.log(getData("0451526538"));
