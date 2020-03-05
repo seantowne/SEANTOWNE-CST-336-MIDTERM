@@ -13,3 +13,10 @@
 1.b.1: padding is the space between the content and the container
 whereas margin is the space around the element or container 
 margin-left | padding-left | element | padding-right | margin-right
+padding is inside the border whereas margin is outside the border.
+
+2.
+ the != operator will not check that the two operands are the same type. For example,
+ 5 != "5" will still return false even though one is an integer and the other is a string.
+ the !== operator will check for type, for example 5!=='5' will return true because the types
+ of the operands are different.
