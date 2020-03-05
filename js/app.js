@@ -14,7 +14,7 @@ function getData(isbn){
         url: urlToUse,
         dataType: "json",
         success: function(result, status){
-            //alert("success");
+            alert("success");
             return result;
         },
         error: function(status, error){
