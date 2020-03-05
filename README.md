@@ -27,3 +27,9 @@ padding is inside the border whereas margin is outside the border.
  The value in a1 is the array [1, 2].
  the first console.log(a1) outputs: [1, 2]
  and the second outputs: [1, 2]
+ 
+ 4.
+ html
+ |
+ |
+ |
