@@ -11,21 +11,20 @@
     
     <body>
         <main>
-            <div class="jumbotron">
-			<h1>Random Dog Gallery</h1>
-			<p>Please enter the number of random images you'd like to generate</p>
-			<form action="/" method="post" onsubmit="buildGallery(); return false;">
-				<div class="form-group row">
-					<label for="number-images" class="col-sm-2 col-form-label">Number of Images</label>
-					<div class="col-sm-4">
-						<input type="text" class="form-control" id="number-images" placeholder="0" required>
-					</div>
-					<div class="col-sm-6">
-						<button type="submit" class="btn btn-primary">Generate</button>
-					</div>
-				</div>
-			</form>
-		</div>	
+            <div id="mainContent" class="container">
+                <div id="query">
+                    <h1>Open Library</h1>
+                    <p>Please enter the ISBN of the book you'd like to retrieve</p>
+                    <div id="inputRow" class="row">
+                        <label for="isbnInput" class="col">ISBN</label>
+                        <input type="text" class="col">
+                        <button id="isbnInput" class="btn btn-primary">Query</button>
+                    </div>
+                </div>
+                <div id="result">
+                    
+                </div>
+            </div>
         </main>
         
         <script src="js/app.js"></script>
