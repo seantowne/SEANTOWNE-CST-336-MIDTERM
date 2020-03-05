@@ -16,7 +16,14 @@ margin-left | padding-left | element | padding-right | margin-right
 padding is inside the border whereas margin is outside the border.
 
 2.
- the != operator will not check that the two operands are the same type. For example,
+ 2.a.1: the != operator will not check that the two operands are the same type. For example,
  5 != "5" will still return false even though one is an integer and the other is a string.
  the !== operator will check for type, for example 5!=='5' will return true because the types
  of the operands are different.
+ 
+ 2.b.1: the value in statement is `false`
+ 
+ 3.
+ The value in a1 is the array [1, 2].
+ the first console.log(a1) outputs: [1, 2]
+ and the second outputs: [1, 2]
