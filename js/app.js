@@ -16,14 +16,20 @@ function getData(isbn){
         url: urlToUse,
         dataType: "json",
         success: function(result, status){
-            alert("success");
-            console.log("here it is:");
-            console.log(result);
-            return result;
+            handleData(result);
         },
         error: function(status, error){
             alert("failure");
         }
     });
 }
-console.log(getData("0451526538"));
+
+function handleData(data){
+    var firstKey = Object.keys(data)[0];
+    var title = data[firstKey].title;
+    console.log(title);
+}
+
+
+data = getData("0451526538");
+handleData(data);
