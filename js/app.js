@@ -21,10 +21,10 @@ function getData(isbn){
             handleData(
                 result[firstKey].title,
                 result[firstKey].authors[0].name,
-                "",
-                "",
-                "",
-                ""
+                result[firstKey].publish_date,
+                result[firstKey].publishers[0].name,
+                isbn,
+                result[firstKey].number_of_pages
             );
         },
         error: function(status, error){
