@@ -20,7 +20,7 @@ function getData(isbn){
             console.log(result);
             handleData(
                 result[firstKey].title,
-                result[firstKey].author.name,
+                result[firstKey].authors[0].name,
                 "",
                 "",
                 "",
