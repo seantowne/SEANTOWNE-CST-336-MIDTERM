@@ -31,5 +31,5 @@ function handleData(data){
 }
 
 
-data = getData("0451526538");
+var data = getData("0451526538");
 handleData(data);
