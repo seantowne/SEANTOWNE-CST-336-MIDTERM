@@ -8,7 +8,7 @@
 function getData(isbn){
     //var test = "https://openlibrary.org/api/books?bibkeys=ISBN:0451526538&format=json&jscmd=data"
     var baseUrl = "https://openlibrary.org/api/books?"
-    var urlToUse = baseUrl + "bibkeys=ISBN" + isbn + "&format=json&jscmd=data";
+    var urlToUse = baseUrl + "bibkeys=ISBN:" + isbn + "&format=json&jscmd=data";
     $.ajax({
         method: "GET",
         url: urlToUse,
