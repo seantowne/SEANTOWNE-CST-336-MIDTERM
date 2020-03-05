@@ -17,6 +17,7 @@ function getData(isbn){
         url: urlToUse,
         dataType: "json",
         success: function(result, status){
+            console.log(result);
             handleData(
                 result[firstKey].title,
                 result[firstKey].author.name,
